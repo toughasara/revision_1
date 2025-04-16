@@ -14,7 +14,7 @@ abstract Class Vehicule{
     public $marque;
     public $modele;
     public $prixJour;
-    public $disponible;
+    public $disponible = true;
 
     public function __construct($id, $immatriculation, $marque, $modele, $prixJour, $disponible){
         $this->id = $id;
@@ -145,7 +145,7 @@ class Client extends Personne{
     public $numeroClient;
     public $reservations[];
 
-    public fucntion __construct($numeroClient){
+    public fucntion __construct($numeroClient, $nom, $prenom, $email){
         parent::__construct($nom, $prenom, $email);
         $this->numeroClient = $numeroClient;
     }
