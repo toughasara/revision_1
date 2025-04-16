@@ -72,7 +72,7 @@ class Voiture extends Vehicule implements ReservableInterface{
     }
 
     public function afficherDetails(){
-        echo 'nombre porte :'.$nbPortes;
+        echo 'nombre porte :'.$this->nbPortes;
         echo 'transmission :'.$transmission;
     }
 
